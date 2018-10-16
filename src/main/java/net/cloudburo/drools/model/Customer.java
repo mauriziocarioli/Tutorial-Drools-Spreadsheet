@@ -7,6 +7,30 @@ public class Customer implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
     
+    public enum CustomerNeed {
+        SAVINGACCOUNT,
+        LIFEINSURANCE,
+        DIGITALBANKING,
+        STUDENTLOAN,
+        MORTAGE
+    }
+
+    public enum CustomerLifeStage {
+        GETTINGSTARTED,
+        CAREERFOCUSED,
+        ADVICEFAMILY,
+        EMPTYNESTER,
+        GOLDENYEARS,
+        BUSINESS
+    }
+
+    public enum CustomerAssets {
+        TO50K,
+        FROM50KTO150K,
+        FROM150KTO300K,
+        OVER300K
+    }
+
     private CustomerLifeStage lifestage;
     private CustomerAssets assets;
     private List<CustomerNeed> customerNeeds = new ArrayList<>();
@@ -41,30 +65,6 @@ public class Customer implements java.io.Serializable {
 
     public CustomerAssets getAssets() {
         return assets;
-    }
-
-    public enum CustomerNeed {
-        SAVINGACCOUNT,
-        LIFEINSURANCE,
-        DIGITALBANKING,
-        STUDENTLOAN,
-        MORTAGE
-    }
-
-    public enum CustomerLifeStage {
-        GETTINGSTARTED,
-        CAREERFOCUSED,
-        ADVICEFAMILY,
-        EMPTYNESTER,
-        GOLDENYEARS,
-        BUSINESS
-    }
-
-    public enum CustomerAssets {
-        TO50K,
-        FROM50KTO150K,
-        FROM150KTO300K,
-        OVER300K
     }
 
 }
