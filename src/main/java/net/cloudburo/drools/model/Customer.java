@@ -24,7 +24,6 @@ public class Customer implements java.io.Serializable {
         MORTAGE
     }
 
-    // https://www.peoples-ebank.com/lifestages.html
     public enum CustomerLifeStage {
         GETTINGSTARTED,
         CAREERFOCUSED,
