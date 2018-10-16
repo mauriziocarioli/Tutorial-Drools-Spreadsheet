@@ -16,30 +16,6 @@ public class Customer implements java.io.Serializable {
         super();
     }
 
-    public enum CustomerNeed {
-        SAVINGACCOUNT,
-        LIFEINSURANCE,
-        DIGITALBANKING,
-        STUDENTLOAN,
-        MORTAGE
-    }
-
-    public enum CustomerLifeStage {
-        GETTINGSTARTED,
-        CAREERFOCUSED,
-        ADVICEFAMILY,
-        EMPTYNESTER,
-        GOLDENYEARS,
-        BUSINESS
-    }
-
-    public enum CustomerAssets {
-        TO50K,
-        FROM50KTO150K,
-        FROM150KTO300K,
-        OVER300K
-    }
-
     public void setLifeStage(CustomerLifeStage lifestage) {
 
         this.lifestage = lifestage;
@@ -65,6 +41,30 @@ public class Customer implements java.io.Serializable {
 
     public CustomerAssets getAssets() {
         return assets;
+    }
+
+    public enum CustomerNeed {
+        SAVINGACCOUNT,
+        LIFEINSURANCE,
+        DIGITALBANKING,
+        STUDENTLOAN,
+        MORTAGE
+    }
+
+    public enum CustomerLifeStage {
+        GETTINGSTARTED,
+        CAREERFOCUSED,
+        ADVICEFAMILY,
+        EMPTYNESTER,
+        GOLDENYEARS,
+        BUSINESS
+    }
+
+    public enum CustomerAssets {
+        TO50K,
+        FROM50KTO150K,
+        FROM150KTO300K,
+        OVER300K
     }
 
 }
