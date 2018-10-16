@@ -31,7 +31,7 @@ public class Customer implements java.io.Serializable {
         OVER300K
     }
 
-    private net.cloudburo.drools.model.Customer.CustomerLifeStage lifestage;
+    private CustomerLifeStage lifestage;
     private CustomerAssets assets;
     private List<CustomerNeed> customerNeeds = new ArrayList<>();
 
