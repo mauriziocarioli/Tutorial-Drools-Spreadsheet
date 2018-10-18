@@ -2,11 +2,12 @@ package net.cloudburo.drools.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.io.Serializable;
 
-public class Offer implements java.io.Serializable {
+public class Offer implements Serializable {
 
-    static final long serialVersionUID = 1L;
-    
+    private static final long serialVersionUID = -1107826986980812417L;
+
     public enum Product {
         LOAN,
         SUPERLOAN,
@@ -21,7 +22,7 @@ public class Offer implements java.io.Serializable {
         GOLDENYEARS_PACKAGE,
         BUSINESS_PACKAGE
     }
-    
+
     private ProductPackage financialPackage;
     private List<Product> products = new ArrayList();
     private int discount;

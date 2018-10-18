@@ -2,11 +2,12 @@ package net.cloudburo.drools.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.io.Serializable;
 
-public class Customer implements java.io.Serializable {
+public class Customer implements Serializable {
 
-    static final long serialVersionUID = 1L;
-    
+    private static final long serialVersionUID = -2948084449274181330L;
+
     public enum CustomerNeed {
         SAVINGACCOUNT,
         LIFEINSURANCE,
