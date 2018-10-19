@@ -3,68 +3,48 @@ package net.cloudburo.drools.model;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.Serializable;
+import java.lang.String;
 
 public class Customer implements Serializable {
 
     private static final long serialVersionUID = -2948084449274181330L;
 
-    public enum CustomerNeed {
-        SAVINGACCOUNT,
-        LIFEINSURANCE,
-        DIGITALBANKING,
-        STUDENTLOAN,
-        MORTAGE
-    }
-
-    public enum CustomerLifeStage {
-        GETTINGSTARTED,
-        CAREERFOCUSED,
-        ADVICEFAMILY,
-        EMPTYNESTER,
-        GOLDENYEARS,
-        BUSINESS
-    }
-
-    public enum CustomerAssets {
-        TO50K,
-        FROM50KTO150K,
-        FROM150KTO300K,
-        OVER300K
-    }
-
-    private CustomerLifeStage lifestage;
-    private CustomerAssets assets;
-    private List<CustomerNeed> customerNeeds = new ArrayList<>();
+    private String lifestage;
+    private String assets;
+    private List<String> customerNeeds = new ArrayList<String>();
 
 
     public Customer() {
-        super();
     }
 
-    public void setLifeStage(CustomerLifeStage lifestage) {
+    public void setLifeStage(String lifestage) {
 
         this.lifestage = lifestage;
     }
 
-    public CustomerLifeStage getLifeStage() {
+    public String getLifeStage() {
 
         return lifestage;
     }
 
-    public void addNeed(CustomerNeed need) {
-
-        customerNeeds.add(need);
-    }
-
-    public List<CustomerNeed> getNeeds() {
+    public List<String> getCustomerNeeds() {
         return customerNeeds;
     }
 
-    public void setAssets(CustomerAssets assets) {
+    public void setCustomerNeeds(List<String> customerNeeds) {
+        this.customerNeeds = customerNeeds;
+    }
+
+    public void addNeed(String need) {
+
+        this.customerNeeds.add(need);
+    }
+
+    public void setAssets(String assets) {
         this.assets = assets;
     }
 
-    public CustomerAssets getAssets() {
+    public String getAssets() {
         return assets;
     }
 
