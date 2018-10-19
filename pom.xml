@@ -7,7 +7,7 @@
   <version>1.0.0</version>
   <packaging>kjar</packaging>
   <name>Tutorial-Drools-Spreadsheet</name>
-  <description>Tutorial about using Drools Spreadsheets</description>
+  <description>Tutorial about using Drools Spreadsheets adapted from https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</description>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
