@@ -9,9 +9,12 @@ public class Customer implements Serializable {
 
     private static final long serialVersionUID = -2948084449274181330L;
 
-    private String lifestage;
-    private String assets;
-    private List<String> customerNeeds = new ArrayList<String>();
+    @org.kie.api.definition.type.Label("lifestage")
+    public String lifestage;
+    @org.kie.api.definition.type.Label("assets")
+    public String assets;
+    @org.kie.api.definition.type.Label("customerneeds")
+    public List<String> customerNeeds = new ArrayList<String>();
 
 
     public Customer() {
