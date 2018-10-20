@@ -37,6 +37,7 @@
 ehthumbs.db
 Thumbs.db
 
-# Application generated files #
+# ephemeral files #
 ###############################
+*.swp
 *.~lock*

@@ -50,6 +50,11 @@
       <version>7.11.0.Final-redhat-00003</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>net.cloudburo</groupId>
+      <artifactId>drools.model</artifactId>
+      <version>1.0</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
